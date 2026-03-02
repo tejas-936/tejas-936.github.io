@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Tejas</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #636e72;
+            --border-color: #dfe6e9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: var(--primary-color);
+            margin: 0;
+            padding: 40px;
+            background-color: #f5f6fa;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 { margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .contact-info { color: var(--secondary-color); font-size: 0.9em; margin-top: 5px; }
+
+        section { margin-bottom: 20px; }
+        h2 { 
+            font-size: 1.2em; 
+            border-bottom: 1px solid var(--border-color); 
+            padding-bottom: 5px; 
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .item { margin-bottom: 15px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: bold; }
+        .item-sub { font-style: italic; color: var(--secondary-color); font-size: 0.95em; }
+        
+        ul { margin: 5px 0; padding-left: 20px; }
+        li { margin-bottom: 3px; font-size: 0.95em; }
+
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: #f1f2f6; padding: 4px 10px; border-radius: 4px; font-size: 0.9em; }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            @page { margin: 0.5in; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Tejas Kumar</h1>
+        <div class="contact-info">
+            Chennai, Tamil Nadu | +91 9952978916 | tejaskumar0639@gmail.com | GitHub: tejas-936
+        </div>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>VIT Chennai (Vellore Institute of Technology)</span>
+                <span>Graduating 2027</span>
+            </div>
+            <div class="item-sub">B.Tech in Computer Science Engineering (Spec. in AI/ML)</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">MySQL</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="item">
+            <div class="item-header">XAI-Driven Bias Analyzer for Recruitment</div>
+            <ul>
+                <li>Developed a multimodal fusion pipeline merging NLP text embeddings with tabular data to audit systemic bias in resume screening models.</li>
+                <li>Implemented a tiered interpretability framework (Integrated Gradients, ALE plots, DiCE) and applied adversarial debiasing to mitigate discrimination.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">Emotion-Aware Speech Transcription</div>
+            <ul>
+                <li>Engineered a dual-branch ASR pipeline using Whisper-base and Wav2Vec2 to synchronize transcripts with paralinguistic emotion metadata.</li>
+                <li>Designed a DistilBERT-based late fusion layer to enhance contextual understanding of spoken sentiment.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">Deep Learning-Based Automated Crack Detection</div>
+            <ul>
+                <li>Architected a ResNet-based deep learning model to automate detection of structural cracks using drone surveillance imagery.</li>
+                <li>Utilized residual connections to mitigate vanishing gradients, enabling scalable infrastructure maintenance and reducing manual inspection overhead.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">Secure Data Exchange App & Compiler</div>
+            <ul>
+                <li>Built a secure communication suite utilizing RSA for asymmetric key exchange and AES for symmetric data encryption.</li>
+                <li>Ensured end-to-end data integrity and protection against man-in-the-middle attacks.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">Hardware-Accelerated 3D Rendering Engine</div>
+            <ul>
+                <li>Developed a 3D engine in Java using LWJGL for optimized GPU utilization and rendering performance.</li>
+                <li>Implemented procedural generation algorithms to dynamically render complex 3D environments.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">Spotify Mood-Based Playlist Curator</div>
+            <ul>
+                <li>Built an automated tool using the Spotify Web API to map user-defined moods to track-specific audio features.</li>
+                <li>Optimized track selection logic using valence, energy, and tempo parameters for high-affinity playlist generation.</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
